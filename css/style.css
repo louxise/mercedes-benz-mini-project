@@ -1,0 +1,625 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.main-header {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* model collection */
+.model-collection {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.collection-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: #111111;
+  margin-bottom: 50px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.car-container {
+  background-color: #ffffff;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.car-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.car-image-wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.car-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.car-name {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #111111;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.5px;
+}
+
+.car-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #144a85;
+  margin: 0;
+}
+
+/* section art */
+.art-of-mercedes {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f2f1ed; /* background color */
+  padding: 80px 60px;
+  box-sizing: border-box;
+}
+
+.art-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.art-image-wrapper {
+  flex: 1;
+  max-width: 50%;
+}
+
+.art-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.art-content {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.art-subheading {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5e5d5d;
+  margin-bottom: 16px;
+}
+
+.art-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #111111;
+  margin: 0 0 24px 0;
+}
+
+.art-description {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 32px 0;
+  max-width: 420px;
+}
+
+.art-link {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.art-link:hover {
+  opacity: 0.7;
+}
+
+.art-link .arrow {
+  font-size: 14px;
+  transition: transform 0.2 ease;
+}
+
+.art-link:hover .arrow {
+  transform: translate(2px, -2px);
+}
+
+/* inquiry form */
+.inquiry-form {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  box-sizing: border-box;
+}
+
+.inquiry-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.inquiry-info {
+  flex: 1;
+  max-width: 440px;
+}
+
+.inquiry-subheading {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5e5d5d;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.inquiry-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #111111;
+  margin: 0 0 24px 0;
+}
+
+.inquiry-description {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #5e5d5d;
+  margin-bottom: 40px;
+}
+
+.inquiry-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inquiry-features li {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #333333;
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.inquiry-features li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: #888888;
+}
+
+.inquiry-content {
+  flex: 1.2;
+  max-width: 680px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+
+.form-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0;
+}
+
+.required-note {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #888888;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.form-group label {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #111111;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #111111;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  font-size: 11px;
+  color: #5e5d5d;
+  cursor: pointer;
+}
+
+/* submit button */
+.submit-btn {
+  width: fit-content;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #333333;
+}
+
+.btn-arrow {
+  font-size: 13px;
+}
+
+/* footer */
+.main-footer {
+  width: 100%;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.emblem-img {
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.footer-disclaimer {
+  flex: 1;
+  max-width: 560px;
+}
+
+.footer-disclaimer p {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #888888;
+  margin: 0;
+  margin-left: 120px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  flex: 0 0 auto;
+}
+
+.legal-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-nav a {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-nav a:hover {
+  color: #ffffff;
+}
+
+.back-to-top {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #5e5d5d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+  color: #ffffff;
+}
+
+.collection-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.collection-eyebrow {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888888;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.collection-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 46px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.collection-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.collection-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #111111;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  background-color: #f2f1ed;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 48px 40px;
+  max-width: 440px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0);
+}
+
+.modal-eyebrow {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+.modal-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #111111;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.modal-divider {
+  width: 32px;
+  height: 1px;
+  background-color: #111111;
+  margin: 18px 0;
+  opacity: 0.5;
+}
+
+.modal-message {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 0 28px 0;
+}
+
+.modal-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #f2f1ed;
+  background-color: #111111;
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.modal-btn:hover {
+  opacity: 0.85;
+}

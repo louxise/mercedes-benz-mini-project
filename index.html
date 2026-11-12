@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercedes-Benz Philippines</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Darker+Grotesque:wght@400&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        src="assets/images/Mercedes-Benz emblem.png"
+        alt="Mercedes-Benz"
+        class="header-logo"
+      />
+    </header>
+
+    <section class="hero">
+      <img
+        src="assets/images/lana del rey hero.png"
+        alt="Mercedes-Benz"
+        class="hero-image"
+      />
+    </section>
+
+    <main>
+      <section class="model-collection">
+        <header class="collection-header">
+          <span class="collection-eyebrow">TIMELESS DESIGNS</span>
+          <h2 class="collection-title">The <em>Classic</em> Collection</h2>
+          <div class="collection-divider"></div>
+        </header>
+
+        <div class="collection-grid">
+          <div class="car-container">
+            <div class="car-image-wrapper">
+              <img
+                src="assets/images/Mercedes-Benz 190 SL — open-top studio photograph.png"
+                alt="Mercedes-Benz 190 SL"
+                class="car-image"
+              />
+            </div>
+            <h3 class="car-name">190 SL</h3>
+            <p class="car-price">Price available upon request</p>
+          </div>
+
+          <div class="car-container">
+            <div class="car-image-wrapper">
+              <img
+                src="assets/images/Mercedes-Benz 280 SL — open-top studio photograph.png"
+                alt="Mercedes-Benz 280 SL"
+                class="car-image"
+              />
+            </div>
+            <h3 class="car-name">280 SL</h3>
+            <p class="car-price">Price available upon request</p>
+          </div>
+
+          <div class="car-container">
+            <div class="car-image-wrapper">
+              <img
+                src="assets/images/Mercedes-Benz 560 SL — open-top studio photograph.png"
+                alt="Mercedes-Benz 560 SL"
+                class="car-image"
+              />
+            </div>
+            <h3 class="car-name">560 SL</h3>
+            <p class="car-price">Price available upon request</p>
+          </div>
+        </div>
+      </section>
+      <section class="art-of-mercedes">
+        <div class="art-container">
+          <div class="art-image-wrapper">
+            <img
+              src="assets/images/Nappa leather and handcrafted interior detail.png"
+              alt="Mercedes-Benz Interior Craftsmanship"
+              class="art-image"
+            />
+          </div>
+
+          <div class="art-content">
+            <span class="art-subheading">THE ART OF MERCEDES-BENZ</span>
+            <h2 class="art-heading">
+              Nothing ordinary.<br />Not a single detail.
+            </h2>
+            <p class="art-description">
+              From the first touch to the open road, every detail is considered.
+              Uncover a world of exquisite materials, intuitive innovation and
+              craftsmanship with zero compromises.
+            </p>
+            <a
+              href="https://www.mercedes-benz.ph/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="art-link"
+              >Discover our world <span class="arrow">&nearr;</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="inquiry" class="inquiry-form">
+        <div class="inquiry-container">
+          <div class="inquiry-info">
+            <span class="inquiry-subheading">YOUR NEXT CHAPTER</span>
+            <h2 class="inquiry-heading">
+              Extraordinary begins<br />with a conversation.
+            </h2>
+
+            <p class="inquiry-description">
+              Some things deserve a personal introduction.<br />
+              Tell us what you have in mind, and a Mercedes-Benz<br />
+              specialist will help you find your perfect match.
+            </p>
+
+            <ul class="inquiry-features">
+              <li>Model advice & bespoke options</li>
+              <li>Pricing & availability on request</li>
+              <li>Private appointments & test drives</li>
+            </ul>
+          </div>
+
+          <div class="inquiry-content">
+            <div class="form-header">
+              <h3 class="form-title">Get in touch today</h3>
+              <span class="required-note">* Required fields</span>
+            </div>
+
+            <form action="#" method="POST" class="form-grid">
+              <div class="form-group">
+                <label for="first-name">First name *</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  placeholder="Your first name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last name *</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  placeholder="Your last name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+63" />
+              </div>
+
+              <div class="form-group">
+                <label for="model-interest">Model of interest *</label>
+                <select id="model-interest" name="model_interest" required>
+                  <option value="" disabled selected>Select a model</option>
+                  <option value="190-sl">Mercedes-Benz 190 SL</option>
+                  <option value="280-sl">Mercedes-Benz 280 SL</option>
+                  <option value="560-sl">Mercedes-Benz 560 SL</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-method">Preferred contact method</label>
+                <select id="contact-method" name="contact_method">
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">How can we help?</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about what kind of vehicle you have in mind..."
+                ></textarea>
+              </div>
+
+              <div class="form-group full-width checkbox-group">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy"
+                  >I agree to the Privacy Policy and to being contacted about my
+                  inquiry. *</label
+                >
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="submit-btn">
+                  Send inquiry <span class="btn-arrow">&nearr;</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img
+              src="assets/images/Mercedes-Benz emblem W.png"
+              alt="Mercedes-Benz Emblem"
+              class="emblem-img"
+            />
+          </div>
+
+          <div class="footer-disclaimer">
+            <p>
+              This website is an independent design project for educational
+              purposes only.<br />
+              It is not affiliated with, endorsed by, or sponsored by
+              Mercedes-Benz.<br />
+              All trademarks and brand assets belong to their respective owners.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <nav class="legal-nav">
+              <a href="#">Privacy</a>
+              <a href="#">Legal Notice</a>
+              <a href="#">Cookies</a>
+            </nav>
+            <a href="#top" class="back-to-top">Back to top &uarr;</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div id="custom-modal" class="modal-overlay">
+      <div class="modal-card">
+        <span class="modal-eyebrow">INQUIRY RECEIVED</span>
+        <h3 class="modal-title" id="modal-title">Thank You</h3>
+        <div class="modal-divider"></div>
+        <p class="modal-message" id="modal-message">
+          Your message has been received. A representative will contact you
+          shortly.
+        </p>
+        <button type="button" class="modal-btn" id="modal-close-btn">
+          Close
+        </button>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
